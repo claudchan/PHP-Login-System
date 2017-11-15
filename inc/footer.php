@@ -1,9 +1,9 @@
 <?php
 
-	// If there is no constant defined called __CONFIG__, do not load this file
-	if(!defined('__CONFIG__')) {
-		exit('You do not have a config file');
-	}
+// If there is no constant defined called __CONFIG__, do not load this file
+if(!defined('__CONFIG__')) {
+	exit('You do not have a config file');
+}
 
 ?>
 
@@ -12,3 +12,5 @@
 
 <!-- Bootstrap Framework JS -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="assets/js/main.js"></script>

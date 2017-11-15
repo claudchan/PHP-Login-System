@@ -1,10 +1,10 @@
 <?php
 
-	// Allow the config
-	define( '__CONFIG__', true );
+// Allow the config
+define( '__CONFIG__', true );
 
-	// Require the confiq
-	require_once "inc/config.php";
+// Require the confiq
+require_once "inc/config.php";
 
 ?>
 
