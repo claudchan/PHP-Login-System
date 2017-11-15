@@ -29,18 +29,18 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2 col-md-6 col-sm-offset-3">
-					<h1>
-						<?php
-
-							echo "Hello World! Today is: ";
-							echo date("Y m d");
-
-						?>
-					</h1>
-					<p>
-						<a href="login.php">Login</a>
-						<a href="register.php">Register</a>
-					</p>
+					<h1>Register</h1>
+					<form class="js-register">
+						<div class="form-group">
+							<label for="inputEmail">Email</label>
+							<input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email" required>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword">Password</label>
+							<input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="Password" required>
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>
 				</div>
 			</div>
 		</div>
