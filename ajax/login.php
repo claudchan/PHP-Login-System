@@ -22,13 +22,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	if($findUser->rowCount() == 1) {
 		// User exists, try and sign them in
-
-		$user = $findUser->fetch(PDO::FETCH_ASSOC);
+		$User = $findUser->fetch(PDO::FETCH_ASSOC);
 
 		$user_id = (int) $User['user_id'];
-		$password = (string) $User['password'];
+		$hash = (string) $User['password'];
 
-		if(password_verify($password, $hash)) {
+		if(password_verify(password, $hash)) {
 			// User is signed in
 			$return['redirect'] = 'dashboard.php';
 
@@ -39,7 +38,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 			$return['error'] = "Invalid user email/password combo";
 		}
 
-		$return['error'] = "You already have an account";
+
+
+		return['error'] = "You do not have an account.";
 	}
 	else {
 		// They need to create a new account
