@@ -3,10 +3,10 @@
 // Allow the config
 define( '__CONFIG__', true );
 
-// Require the confiq
+// Require the config
 require_once "inc/config.php";
 
-ForceDashboard();
+Page::ForceDashboard();
 
 ?>
 
@@ -14,15 +14,11 @@ ForceDashboard();
 <html lang="en">
 	<head>
 
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<?php
 
-		<title>Page Title</title>
+			require_once "inc/head.php";
 
-		<base href="/PHP-Login-System/" />
-
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+		?>
 
 	</head>
 

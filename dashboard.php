@@ -3,10 +3,12 @@
 // Allow the config
 define( '__CONFIG__', true );
 
-// Require the confiq
+// Require the config
 require_once "inc/config.php";
 
-ForceLogin();
+Page::ForceLogin();
+
+$User = new User($_SESSION['user_id']);
 
 ?>
 
@@ -14,15 +16,11 @@ ForceLogin();
 <html lang="en">
 	<head>
 
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<?php
 
-		<title>Page Title</title>
+			require_once "inc/head.php";
 
-		<base href="/PHP-Login-System/" />
-
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+		?>
 
 	</head>
 
@@ -31,9 +29,9 @@ ForceLogin();
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2 col-md-6 col-sm-offset-3">
-					<h1>Welcome to Dashboard!</h1>
-					<p>You are signed in as user: <?php echo $_SESSION['user_id']; ?></p>
-
+					<h1>Dashboard</h1>
+					<h4>Hello <?php echo $User->email; ?>, you registered at <?php echo $User->created; ?></h4>
+					<p><a href="/logout.php">Logout</a></p>
 				</div>
 			</div>
 		</div>

@@ -19,11 +19,12 @@ $(document)
 		return false;
 	}
 
+  // Assuming the code gets this far, we can start the ajax process
 	_error.hide();
 
 	$.ajax({
 		type: 'POST',
-		url: 'ajax/register.php',
+		url: '/ajax/register.php',
 		data: dataObj,
 		dataType: 'json',
 		async: true
@@ -47,6 +48,7 @@ $(document)
 
 	return false;
 })
+//
 .on('submit', 'form.js-login', function(event) {
 	event.preventDefault();
 
@@ -67,11 +69,12 @@ $(document)
 		return false;
 	}
 
+  // Assuming the code gets this far, we can start the ajax process
 	_error.hide();
 
 	$.ajax({
 		type: 'POST',
-		url: 'ajax/login.php',
+		url: '/ajax/login.php',
 		data: dataObj,
 		dataType: 'json',
 		async: true
