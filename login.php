@@ -6,6 +6,8 @@ define( '__CONFIG__', true );
 // Require the confiq
 require_once "inc/config.php";
 
+ForceDashboard();
+
 ?>
 
 <!DOCTYPE html>

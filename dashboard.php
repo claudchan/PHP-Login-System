@@ -6,8 +6,7 @@ define( '__CONFIG__', true );
 // Require the confiq
 require_once "inc/config.php";
 
-echo $_SESSION['user_id'] . ' is your user ID';
-exit;
+ForceLogin();
 
 ?>
 
@@ -32,8 +31,9 @@ exit;
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2 col-md-6 col-sm-offset-3">
-					<h1>Dashboard</h1>
-					<p>Welcome!</p>
+					<h1>Welcome to Dashboard!</h1>
+					<p>You are signed in as user: <?php echo $_SESSION['user_id']; ?></p>
+
 				</div>
 			</div>
 		</div>
