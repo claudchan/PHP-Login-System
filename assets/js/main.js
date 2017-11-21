@@ -82,7 +82,7 @@ $(document)
 			window.location = data.redirect;
 		}
 		else if(data.error !== undefined) {
-			_error.text(data.error).hide().fadeIn();
+			_error.html(data.error).hide().fadeIn();
 		}
 	})
 	.fail(function ajaxFailed(e) {
