@@ -14,6 +14,7 @@ class User {
 	public $created;
 
 	public function __construct(int $user_id) {
+
 		$this->con = DB::getConnection();
 
 		$user_id = Filter::Int( $user_id );
@@ -35,6 +36,7 @@ class User {
 			header("Location: /logout.php");
 			exit;
 		}
+
 	}
 
 	public function setEmail($new_email) {
@@ -46,6 +48,7 @@ class User {
 		// echo $this->user_id; // The existing user id
 		
 		// $this->con->prepare("...")		
+	
 	}
 
 	public static function Find($email, $return_assoc = false) {
@@ -68,6 +71,7 @@ class User {
 		return $user_found;
 	
 	}
+
 }
 
 ?>

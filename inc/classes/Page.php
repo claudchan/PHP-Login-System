@@ -11,6 +11,7 @@ class Page {
 	static function ForceLogin() {
 		if(isset($_SESSION['user_id'])) {
 			// The user is allowed here
+
 		}
 		else {
 			// The user is not allowed here
@@ -27,6 +28,7 @@ class Page {
 		}
 		else {
 			// The user is not allowed here
+			
 		}
 	}
 

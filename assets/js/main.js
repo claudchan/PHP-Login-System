@@ -19,7 +19,7 @@ $(document)
 		return false;
 	}
 
-  // Assuming the code gets this far, we can start the ajax process
+	// Assuming the code gets this far, we can start the ajax process
 	_error.hide();
 
 	$.ajax({
@@ -69,7 +69,7 @@ $(document)
 		return false;
 	}
 
-  // Assuming the code gets this far, we can start the ajax process
+	// Assuming the code gets this far, we can start the ajax process
 	_error.hide();
 
 	$.ajax({

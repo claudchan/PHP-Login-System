@@ -32,12 +32,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		}
 		else {
 			// Invalid user email/password combo
-			$return['error'] = "Invalid user email/password combo";
+			$return['error'] = "Invalid user email/password combo.";
 		}
 	}
 	else {
 		// They need to create a new account
-		$return['error'] = "You do not have an account. <a href='/register.php'>Create one now?</a>";
+		$return['error'] = "You do not have an account. <a href='/register.php'>Create one?</a>";
 	}
 
 	echo json_encode($return, JSON_PRETTY_PRINT); exit;

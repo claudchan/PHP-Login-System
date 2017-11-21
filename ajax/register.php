@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	if($user_found) {
 		// User exists 
-		// We can also check to see if they are able to log in. 
+		// We can also check to see if they are able to log in
 		$return['error'] = "You already have an account";
 		$return['is_logged_in'] = false;
 	}

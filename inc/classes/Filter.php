@@ -46,4 +46,5 @@ class Filter {
 		return (int) $integer = filter_var( $integer , FILTER_SANITIZE_NUMBER_INT);
 	}
 }
+
 ?>
